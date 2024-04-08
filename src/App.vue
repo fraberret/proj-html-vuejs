@@ -1,4 +1,5 @@
 <script>
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import AppHeader from './components/AppHeader.vue';
 
 export default {
@@ -10,7 +11,15 @@ export default {
 </script>
 
 <template>
-    <AppHeader />
+    <header>
+        <nav>
+            <font-awesome-icon :icon="['fab', 'facebook-f']" />
+        </nav>
+    </header>
+
+    <main>
+
+    </main>
 </template>
 
 
