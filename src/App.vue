@@ -46,10 +46,13 @@ export default {
             </div>
         </div>
 
+        <!-- Featured products section -->
         <div class="featured_products container text-center py-5">
 
+            <!-- Title section -->
             <div class="title_section">
 
+                <!-- Title -->
                 <div class="title d-flex w-100 justify-content-between align-items-center">
                     <div class="line border-top border-bottom"></div>
                     <h2 class="m-0">Featured Products</h2>
@@ -59,6 +62,7 @@ export default {
                 <p>Must have products from our top sellers</p>
             </div>
 
+            <!-- Gender selector -->
             <div class="gender_section d-flex justify-content-center my-5 ">
 
                 <div class="border py-2 px-5">Men</div>
@@ -67,19 +71,35 @@ export default {
 
             </div>
 
+            <!-- Product section -->
             <div class="container">
                 <div class="row">
+
+                    <!-- Product -->
                     <div class="col" v-for="product in featuredProducts">
                         <div class="card border-0">
+
+                            <!--image -->
                             <img :src="product.image" alt="">
+
+                            <!--details -->
                             <div class="card-body text-start">
+
+                                <!-- name -->
                                 <h5>{{ product.name }}</h5>
+
+                                <!-- tags -->
                                 <p>{{ product.tags }}</p>
 
+                                <!-- price section -->
                                 <div class="price">
+
+                                    <!-- real price -->
                                     <span :class="{ 'real_price': product.discountedPrice }" class="pe-2">${{
                                         product.realPrice
                                     }}</span>
+
+                                    <!--discounted price  -->
                                     <span v-if="product.discountedPrice != false" class="discount_price pe-2">${{
                                         product.discountedPrice
                                     }}</span>
