@@ -11,15 +11,26 @@ export default {
 </script>
 
 <template>
-    <header>
-        <nav>
-            <font-awesome-icon :icon="['fab', 'facebook-f']" />
-            <font-awesome-icon :icon="['fab', 'twitter']" />
-            <font-awesome-icon :icon="['fab', 'instagram']" />
-            <font-awesome-icon :icon="['fab', 'youtube']" />
+    <header class="container">
+
+        <!-- Up section of header -->
+        <div class="up_section">
+
+            <!-- Social section -->
+            <div class="social_icons ">
+                <font-awesome-icon :icon="['fab', 'facebook-f']" />
+                <font-awesome-icon :icon="['fab', 'twitter']" />
+                <font-awesome-icon :icon="['fab', 'instagram']" />
+                <font-awesome-icon :icon="['fab', 'youtube']" />
+            </div>
+
+            <!-- Nav section -->
+            <nav>
 
 
-        </nav>
+
+            </nav>
+        </div>
     </header>
 
     <main>
