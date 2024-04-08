@@ -26,9 +26,9 @@ export default {
 
             <!-- Nav section -->
             <nav>
-                <ul class="m-0 d-flex align-items-center gap-3">
+                <ul class="m-0 d-flex align-items-center ">
 
-                    <li class="nav-item ">
+                    <li class="nav-item px-3 ">
                         <a class="nav-link active" href="#">Shopping Cart</a>
                     </li>
 
@@ -38,8 +38,10 @@ export default {
                         <a href=""><font-awesome-icon :icon="['fas', 'chevron-down']" /></a>
                     </li>
 
-                    <li class="nav-item py-3 border-end d-flex px-5">
-                        <a class="nav-link active pe-3" href="#">Cart</a>
+                    <li class="cart bg_light nav-item py-3 border-end d-flex align-items-center">
+                        <font-awesome-icon :icon="['fas', 'cart-shopping']" />
+                        <a class="nav-link active px-3 d-flex ali" href="#">
+                            CART</a>
                         <a href=""><font-awesome-icon :icon="['fas', 'chevron-down']" /></a>
                     </li>
 
@@ -58,4 +60,9 @@ export default {
 
 
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.cart {
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+</style>

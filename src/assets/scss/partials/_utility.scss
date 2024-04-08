@@ -1,0 +1,5 @@
+@use './variable' as *;
+
+.bg_light {
+    background-color: $light;
+}
