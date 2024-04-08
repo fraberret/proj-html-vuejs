@@ -72,6 +72,14 @@ export default {
                     <div class="col" v-for="product in featuredProducts">
                         <div class="card border-0">
                             <img :src="product.image" alt="">
+                            <div class="card-body text-start">
+                                <h5>{{ product.name }}</h5>
+                                <p>{{ product.tags }}</p>
+                                <span class="pe-2" v-if="product.discountedPrice !== false">{{ product.discountedPrice
+                                    }}€</span>
+
+                                <span>{{ product.realPrice }}€</span>
+                            </div>
                         </div>
                     </div>
                 </div>
