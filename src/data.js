@@ -1,4 +1,4 @@
-export const navHeader = [
+export const navVoices = [
     {
         name: 'Home',
         chevronDown: true

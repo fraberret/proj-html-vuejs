@@ -1,5 +1,5 @@
 <script>
-import { navHeader } from './data'
+import { navVoices } from './data'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import AppHeader from './components/AppHeader.vue';
 
@@ -11,7 +11,7 @@ export default {
     },
     data() {
         return {
-            navHeader
+            navVoices
         }
     }
 }
@@ -65,12 +65,15 @@ export default {
         <!-- Bottom section of header -->
         <div class="bottom_section d-flex justify-content-between align-items-center py-4 px-5 ">
 
+            <!-- Logo -->
             <img src="/public/images/classic_shop_logo1x.png" alt="">
 
+            <!-- Bottom nav -->
             <nav>
                 <ul class="d-flex gap-4">
 
-                    <li v-for="navVoice in navHeader">{{ navVoice.name }}
+                    <!-- Nav voices -->
+                    <li v-for="navVoice in navVoices">{{ navVoice.name }}
                         <font-awesome-icon v-if="navVoice.chevronDown == true" :icon="['fas', 'chevron-down']" />
 
                     </li>
