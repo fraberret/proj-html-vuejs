@@ -4,6 +4,10 @@
     background-color: $light;
 }
 
+.bg_accent_light {
+    background-color: $accent_light !important;
+}
+
 ul {
     list-style: none;
 }

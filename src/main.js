@@ -9,8 +9,9 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons/faChevronDown';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons/faShoppingCart';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
-library.add(faFacebookF, faTwitter, faInstagram, faYoutube, faChevronDown, faShoppingCart)
+library.add(faFacebookF, faTwitter, faInstagram, faYoutube, faChevronDown, faShoppingCart, faSearch)
 
 createApp(App)
     .component('font-awesome-icon', FontAwesomeIcon)
