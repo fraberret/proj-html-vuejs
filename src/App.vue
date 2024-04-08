@@ -1,11 +1,18 @@
 <script>
+import { navHeader } from './data'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import AppHeader from './components/AppHeader.vue';
+
 
 export default {
     name: 'App',
     components: {
         AppHeader
+    },
+    data() {
+        return {
+            navHeader
+        }
     }
 }
 </script>
@@ -62,12 +69,12 @@ export default {
 
             <nav>
                 <ul class="d-flex gap-4">
-                    <li>Home</li>
-                    <li>Home</li>
-                    <li>Home</li>
-                    <li>Home</li>
-                    <li>Home</li>
-                    <li>Home</li>
+
+                    <li v-for="navVoice in navHeader">{{ navVoice.name }}
+                        <font-awesome-icon v-if="navVoice.chevronDown == true" :icon="['fas', 'chevron-down']" />
+
+                    </li>
+
                 </ul>
             </nav>
 

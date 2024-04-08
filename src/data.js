@@ -1,4 +1,4 @@
-export const headerNav = [
+export const navHeader = [
     {
         name: 'Home',
         chevronDown: true
@@ -17,7 +17,7 @@ export const headerNav = [
     },
     {
         name: 'News',
-        chevronDown: true
+        chevronDown: false
     },
     {
         name: 'Elements',
