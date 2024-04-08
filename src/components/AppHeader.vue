@@ -68,7 +68,7 @@ export default {
         <div class="bottom_section d-flex justify-content-between align-items-center py-4 container ">
 
             <!-- Logo -->
-            <img src="/public/images/classic_shop_logo1x.png" alt="">
+            <img src="/images/classic_shop_logo1x.png" alt="">
 
             <!-- Bottom nav -->
             <NavBar :navVoices />

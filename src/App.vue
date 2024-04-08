@@ -31,7 +31,7 @@ export default {
         <div class="jumbotron text-center text-white">
 
             <!-- img -->
-            <img src="/public/images/home1_slide_three_bg_2.jpg" alt="">
+            <img src="/images/home1_slide_three_bg_2.jpg" alt="">
 
             <!-- Text -->
             <div class="jumbotron_text">
@@ -97,12 +97,12 @@ export default {
                                     <!-- real price -->
                                     <span :class="{ 'real_price': product.discountedPrice }" class="pe-2">${{
                                         product.realPrice
-                                    }}</span>
+                                        }}</span>
 
                                     <!--discounted price  -->
                                     <span v-if="product.discountedPrice != false" class="discount_price pe-2">${{
                                         product.discountedPrice
-                                    }}</span>
+                                        }}</span>
                                 </div>
 
                             </div>
