@@ -1,4 +1,4 @@
-@use './partials/variable' as *;
+@use './partials/_variable' as *;
 @use './partials/utility' as *;
 @import "bootstrap/scss/bootstrap";
 
@@ -8,4 +8,26 @@ header {
         padding-left: 5rem;
         padding-right: 5rem;
     }
+}
+
+main {
+
+    & .price {
+        color: $accent_light;
+        font-size: 20px;
+
+        & .discount_price {
+
+            margin-right: 0.5rem;
+
+        }
+
+        & .real_price {
+            text-decoration: line-through;
+
+        }
+
+
+    }
+
 }

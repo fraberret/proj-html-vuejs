@@ -75,10 +75,16 @@ export default {
                             <div class="card-body text-start">
                                 <h5>{{ product.name }}</h5>
                                 <p>{{ product.tags }}</p>
-                                <span class="pe-2" v-if="product.discountedPrice !== false">{{ product.discountedPrice
-                                    }}€</span>
 
-                                <span>{{ product.realPrice }}€</span>
+                                <div class="price">
+                                    <span :class="{ 'real_price': product.discountedPrice }" class="pe-2">${{
+                                        product.realPrice
+                                    }}</span>
+                                    <span v-if="product.discountedPrice != false" class="discount_price pe-2">${{
+                                        product.discountedPrice
+                                    }}</span>
+                                </div>
+
                             </div>
                         </div>
                     </div>
