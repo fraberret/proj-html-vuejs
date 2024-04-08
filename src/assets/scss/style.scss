@@ -1,3 +1,11 @@
 @use './partials/variable' as *;
 @use './partials/utility' as *;
 @import "bootstrap/scss/bootstrap";
+
+
+header {
+    & .cart {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
