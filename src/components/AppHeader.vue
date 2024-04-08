@@ -18,7 +18,7 @@ export default {
     <header>
 
         <!-- Up section of header -->
-        <div class="up_section d-flex justify-content-between align-items-center px-5 border-bottom">
+        <div class="up_section d-flex justify-content-between align-items-center container ">
 
             <!-- Social section -->
             <div class="social_icons d-flex justify-content-between gap-3 ">
@@ -59,8 +59,10 @@ export default {
             </nav>
         </div>
 
+        <div class="line w-100 border"></div>
+
         <!-- Bottom section of header -->
-        <div class="bottom_section d-flex justify-content-between align-items-center py-4 px-5 ">
+        <div class="bottom_section d-flex justify-content-between align-items-center py-4 container ">
 
             <!-- Logo -->
             <img src="/public/images/classic_shop_logo1x.png" alt="">
