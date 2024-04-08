@@ -25,21 +25,48 @@ export default {
 
     <main>
 
+        <!-- Jumbotron section -->
         <div class="jumbotron text-center text-white">
 
-
+            <!-- img -->
             <img src="/public/images/home1_slide_three_bg_2.jpg" alt="">
 
+            <!-- Text -->
             <div class="jumbotron_text">
                 <h1 class="m-0">Brand New Arrivals</h1>
                 <p>NEW COLLECTION FROM NEW YORK</p>
 
+                <!-- Buttons -->
                 <div class="buttons d-flex gap-3 justify-content-center">
                     <button class="btn btn-outline-light border-2 rounded-pill py-3 px-5">VIEW ALL</button>
                     <button class="btn btn-outline-light border-2 py-3 px-5 rounded-pill">LOOKBOOK</button>
                 </div>
+            </div>
+        </div>
+
+        <div class="featured_products container text-center py-5">
+
+            <div class="title_section">
+
+                <div class="title d-flex w-100 justify-content-between align-items-center">
+                    <div class="line border-top border-bottom"></div>
+                    <h2 class="m-0">Featured Products</h2>
+                    <div class="line border-top border-bottom"></div>
+                </div>
+
+                <p>Must have products from our top sellers</p>
+            </div>
+
+            <div class="gender_section d-flex justify-content-center my-5 ">
+
+                <div class="border py-2 px-5">Men</div>
+                <div class="border py-2 px-5">Women</div>
+                <div class="border py-2 px-5">Accessories</div>
 
             </div>
+
+
+
 
         </div>
 
@@ -74,5 +101,13 @@ img {
         font-size: 26px;
         font-weight: 200;
     }
+
+
+
+}
+
+.line {
+
+    width: 35%;
 }
 </style>

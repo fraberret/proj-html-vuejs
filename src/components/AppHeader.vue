@@ -59,6 +59,7 @@ export default {
             </nav>
         </div>
 
+        <!-- Line between first and second section -->
         <div class="line w-100 border"></div>
 
         <!-- Bottom section of header -->
