@@ -14,6 +14,11 @@ export default {
     <header>
         <nav>
             <font-awesome-icon :icon="['fab', 'facebook-f']" />
+            <font-awesome-icon :icon="['fab', 'twitter']" />
+            <font-awesome-icon :icon="['fab', 'instagram']" />
+            <font-awesome-icon :icon="['fab', 'youtube']" />
+
+
         </nav>
     </header>
 

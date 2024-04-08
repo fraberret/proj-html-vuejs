@@ -4,8 +4,11 @@ import App from './App.vue'
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 
-library.add(faFacebookF)
+library.add(faFacebookF, faTwitter, faInstagram, faYoutube)
 
 createApp(App)
     .component('font-awesome-icon', FontAwesomeIcon)
