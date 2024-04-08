@@ -17,6 +17,8 @@ export default {
 <template>
     <header>
 
+        <div class="line w-100 border border-primary"></div>
+
         <!-- Up section of header -->
         <div class="up_section d-flex justify-content-between align-items-center container ">
 
