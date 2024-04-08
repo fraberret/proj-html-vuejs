@@ -1,4 +1,5 @@
 <script>
+import { featuredProducts } from './data.js'
 import { navVoices } from './data.js'
 import AppHeader from './components/AppHeader.vue';
 
@@ -12,7 +13,8 @@ export default {
 
     data() {
         return {
-            navVoices
+            navVoices,
+            featuredProducts
         }
     }
 
@@ -63,6 +65,16 @@ export default {
                 <div class="border py-2 px-5">Women</div>
                 <div class="border py-2 px-5">Accessories</div>
 
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col" v-for="product in featuredProducts">
+                        <div class="card border-0">
+                            <img :src="product.image" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
 
 

@@ -24,7 +24,7 @@ export const navVoices = [
         chevronDown: true
     },
 
-]
+];
 
 
 export const featuredProducts = [
