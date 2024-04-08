@@ -1,2 +1,6 @@
 @use './partials/variable' as *;
 @import "bootstrap/scss/bootstrap";
+
+ul {
+    list-style: none;
+}
