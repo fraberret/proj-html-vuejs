@@ -1,6 +1,12 @@
 <script>
+import Carousel from './Carousel.vue';
+
 export default {
     name: 'AppMain',
+
+    components: {
+        Carousel
+    },
 
     props: [
         "featuredProducts"
@@ -81,12 +87,12 @@ export default {
                                     <!-- real price -->
                                     <span :class="{ 'real_price': product.discountedPrice }" class="pe-2">${{
                                         product.realPrice
-                                    }}</span>
+                                        }}</span>
 
                                     <!--discounted price  -->
                                     <span v-if="product.discountedPrice != false" class="discount_price pe-2">${{
                                         product.discountedPrice
-                                    }}</span>
+                                        }}</span>
                                 </div>
 
                             </div>
@@ -176,42 +182,7 @@ export default {
                 <p>Must have products from our top sellers</p>
             </div>
 
-            <div class="container position-relative my-5">
-                <div class="row">
-                    <div class="col">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci accusamus quis laboriosam
-                        voluptatum maiores minima quod voluptas, expedita provident totam dolores officia, saepe nostrum
-                        aut, in sit iusto consequuntur ratione.
-                    </div>
-                    <div class="col">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci accusamus quis laboriosam
-                        voluptatum maiores minima quod voluptas, expedita provident totam dolores officia, saepe nostrum
-                        aut, in sit iusto consequuntur ratione.
-                    </div>
-                    <div class="col">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci accusamus quis laboriosam
-                        voluptatum maiores minima quod voluptas, expedita provident totam dolores officia, saepe nostrum
-                        aut, in sit iusto consequuntur ratione.
-                    </div>
-                    <div class="col">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci accusamus quis laboriosam
-                        voluptatum maiores minima quod voluptas, expedita provident totam dolores officia, saepe nostrum
-                        aut, in sit iusto consequuntur ratione.
-                    </div>
-                    <div class="col">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci accusamus quis laboriosam
-                        voluptatum maiores minima quod voluptas, expedita provident totam dolores officia, saepe nostrum
-                        aut, in sit iusto consequuntur ratione.
-                    </div>
-
-                    <div>
-                        <button class="position-absolute top-50 start-0 translate-middle">click</button>
-                        <button class="position-absolute top-50 start-100 translate-middle">click</button>
-
-                    </div>
-
-                </div>
-            </div>
+            <Carousel />
 
         </div>
 
@@ -249,42 +220,7 @@ export default {
                 <p>Must have products from our top sellers</p>
             </div>
 
-            <div class="position-relative my-5">
-                <div class="row">
-                    <div class="col">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci accusamus quis laboriosam
-                        voluptatum maiores minima quod voluptas, expedita provident totam dolores officia, saepe nostrum
-                        aut, in sit iusto consequuntur ratione.
-                    </div>
-                    <div class="col">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci accusamus quis laboriosam
-                        voluptatum maiores minima quod voluptas, expedita provident totam dolores officia, saepe nostrum
-                        aut, in sit iusto consequuntur ratione.
-                    </div>
-                    <div class="col">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci accusamus quis laboriosam
-                        voluptatum maiores minima quod voluptas, expedita provident totam dolores officia, saepe nostrum
-                        aut, in sit iusto consequuntur ratione.
-                    </div>
-                    <div class="col">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci accusamus quis laboriosam
-                        voluptatum maiores minima quod voluptas, expedita provident totam dolores officia, saepe nostrum
-                        aut, in sit iusto consequuntur ratione.
-                    </div>
-                    <div class="col">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci accusamus quis laboriosam
-                        voluptatum maiores minima quod voluptas, expedita provident totam dolores officia, saepe nostrum
-                        aut, in sit iusto consequuntur ratione.
-                    </div>
-
-                    <div>
-                        <button class="position-absolute top-50 start-0 translate-middle-y">click</button>
-                        <button class="position-absolute top-50 end-0 translate-middle-y">click</button>
-
-                    </div>
-
-                </div>
-            </div>
+            <Carousel />
 
         </div>
 
