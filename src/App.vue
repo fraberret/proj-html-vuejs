@@ -100,12 +100,12 @@ export default {
                                     <!-- real price -->
                                     <span :class="{ 'real_price': product.discountedPrice }" class="pe-2">${{
                                         product.realPrice
-                                        }}</span>
+                                    }}</span>
 
                                     <!--discounted price  -->
                                     <span v-if="product.discountedPrice != false" class="discount_price pe-2">${{
                                         product.discountedPrice
-                                        }}</span>
+                                    }}</span>
                                 </div>
 
                             </div>
@@ -553,6 +553,13 @@ export default {
                 </div>
             </div>
         </div>
+
+        <!-- COpyright section -->
+        <div class="bg-black text-center text-white py-5">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, repudiandae.</p>
+            <img src="/images/payment_cards_footer.png" alt="">
+        </div>
+
 
     </footer>
 </template>
