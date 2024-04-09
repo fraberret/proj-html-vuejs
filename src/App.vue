@@ -462,11 +462,20 @@ export default {
             </div>
 
         </div>
-
-
-
-
     </main>
+
+    <footer>
+        <div class="subscribe bg_dark text-white py-5">
+            <div class=" py-5 container d-flex justify-content-between align-items-center">
+                <font-awesome-icon :icon="['fas', 'envelope']" />
+                <h4 class="m-0">Lorem ipsum dolor sit amet consectetur.</h4>
+                <div>
+                    <input type="text" class="py-2 px-4 rounded-pill" placeholder="Insert your email">
+                    <button class="bg_accent_light btn text-light rounded-pill py-2 px-5  ms-2">SEND</button>
+                </div>
+            </div>
+        </div>
+    </footer>
 </template>
 
 
