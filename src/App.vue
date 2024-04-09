@@ -97,12 +97,12 @@ export default {
                                     <!-- real price -->
                                     <span :class="{ 'real_price': product.discountedPrice }" class="pe-2">${{
                                         product.realPrice
-                                        }}</span>
+                                    }}</span>
 
                                     <!--discounted price  -->
                                     <span v-if="product.discountedPrice != false" class="discount_price pe-2">${{
                                         product.discountedPrice
-                                        }}</span>
+                                    }}</span>
                                 </div>
 
                             </div>
@@ -247,6 +247,61 @@ export default {
                     </div>
                 </div>
             </div>
+        </div>
+
+        <!-- New Arrivals section -->
+        <div class="New Arrivals my-5  text-center">
+
+            <!-- Title section -->
+            <div class="title_section container">
+
+                <!-- Title -->
+                <div class="title d-flex w-100 justify-content-between align-items-center">
+                    <div class="line border-top border-bottom"></div>
+                    <h2 class="m-0">Featured Products</h2>
+                    <div class="line border-top border-bottom"></div>
+                </div>
+
+                <p>Must have products from our top sellers</p>
+            </div>
+
+            <div class="position-relative my-5">
+                <div class="row">
+                    <div class="col">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci accusamus quis laboriosam
+                        voluptatum maiores minima quod voluptas, expedita provident totam dolores officia, saepe nostrum
+                        aut, in sit iusto consequuntur ratione.
+                    </div>
+                    <div class="col">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci accusamus quis laboriosam
+                        voluptatum maiores minima quod voluptas, expedita provident totam dolores officia, saepe nostrum
+                        aut, in sit iusto consequuntur ratione.
+                    </div>
+                    <div class="col">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci accusamus quis laboriosam
+                        voluptatum maiores minima quod voluptas, expedita provident totam dolores officia, saepe nostrum
+                        aut, in sit iusto consequuntur ratione.
+                    </div>
+                    <div class="col">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci accusamus quis laboriosam
+                        voluptatum maiores minima quod voluptas, expedita provident totam dolores officia, saepe nostrum
+                        aut, in sit iusto consequuntur ratione.
+                    </div>
+                    <div class="col">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci accusamus quis laboriosam
+                        voluptatum maiores minima quod voluptas, expedita provident totam dolores officia, saepe nostrum
+                        aut, in sit iusto consequuntur ratione.
+                    </div>
+
+                    <div>
+                        <button class="position-absolute top-50 start-0 translate-middle-y">click</button>
+                        <button class="position-absolute top-50 end-0 translate-middle-y">click</button>
+
+                    </div>
+
+                </div>
+            </div>
+
         </div>
 
 
