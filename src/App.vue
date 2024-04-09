@@ -317,6 +317,60 @@ export default {
             </div>
         </div>
 
+        <!-- Blog section -->
+        <div class="blog_section text-center my-5">
+
+            <div class="title_section">
+
+                <!-- Title -->
+                <div class="title d-flex w-100 justify-content-between align-items-center">
+                    <div class="line border-top border-bottom"></div>
+                    <h2 class="m-0">Featured Products</h2>
+                    <div class="line border-top border-bottom"></div>
+                </div>
+
+                <p>Must have products from our top sellers</p>
+            </div>
+
+            <div class="container my-5">
+                <div class="row">
+                    <div class="col-4  ">
+                        <div class="ratio ratio-16x9 border_dot">
+
+                        </div>
+
+                        <div class="body text-start ">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia similique nemo deserunt
+                            doloremque. Corporis natus nostrum repudiandae doloremque laudantium deserunt accusantium
+                            ratione suscipit necessitatibus commodi, quos illo nesciunt non eligendi!
+                        </div>
+                    </div>
+                    <div class="col-4 ">
+                        <div class="ratio ratio-16x9 border_dot">
+
+                        </div>
+
+                        <div class="body text-start ">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia similique nemo deserunt
+                            doloremque. Corporis natus nostrum repudiandae doloremque laudantium deserunt accusantium
+                            ratione suscipit necessitatibus commodi, quos illo nesciunt non eligendi!
+                        </div>
+                    </div>
+                    <div class="col-4 ">
+                        <div class="ratio ratio-16x9 border_dot">
+
+                        </div>
+
+                        <div class="body text-start ">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia similique nemo deserunt
+                            doloremque. Corporis natus nostrum repudiandae doloremque laudantium deserunt accusantium
+                            ratione suscipit necessitatibus commodi, quos illo nesciunt non eligendi!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
     </main>
 </template>
