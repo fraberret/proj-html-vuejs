@@ -1,14 +1,17 @@
 <script>
+
 import { featuredProducts } from './data.js'
 import { navVoices } from './data.js'
 import AppHeader from './components/AppHeader.vue';
+import Socials from './components/Socials.vue'
 
 
 
 export default {
     name: 'App',
     components: {
-        AppHeader
+        AppHeader,
+        Socials
     },
 
     data() {
@@ -485,16 +488,15 @@ export default {
 
                     <!-- Featured -->
                     <div class="col-3 flex-column">
-                        <h5 class="my-3">FEATURED</h5>
-                        <div class="col-4 d-flex border-bottom justify-content-between w-100 pt-3"
-                            v-for="product in featuredProducts">
-                            <div>
-                                <p>{{ product.name }}</p>
-                                <p>${{ product.realPrice }}</p>
-                            </div>
-
-                            <img class="pb-4" :src="product.image" alt="">
+                        <img src="/images/classic_shop_logo_footer.png" width="100" alt="">
+                        <div class="my-5 body">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
                         </div>
+                        <Socials />
                     </div>
 
                     <!-- On sale -->
@@ -603,5 +605,9 @@ img {
     & img {
         width: 20%;
     }
+}
+
+.logo {
+    color: white;
 }
 </style>

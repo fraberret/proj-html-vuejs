@@ -2,13 +2,15 @@
 import Logo from './Logo.vue'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import NavBar from './NavBar.vue';
+import Socials from './Socials.vue'
 
 
 export default {
     name: 'AppHeader',
     components: {
         NavBar,
-        Logo
+        Logo,
+        Socials
     },
     props: [
         "navVoices"
@@ -25,12 +27,7 @@ export default {
         <div class="up_section d-flex justify-content-between align-items-center container ">
 
             <!-- Social section -->
-            <div class="social_icons d-flex justify-content-between gap-3 ">
-                <font-awesome-icon :icon="['fab', 'facebook-f']" />
-                <font-awesome-icon :icon="['fab', 'twitter']" />
-                <font-awesome-icon :icon="['fab', 'instagram']" />
-                <font-awesome-icon :icon="['fab', 'youtube']" />
-            </div>
+            <Socials />
 
             <!-- Nav section -->
             <nav>
