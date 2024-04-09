@@ -1,4 +1,5 @@
 <script>
+import Logo from './Logo.vue'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import NavBar from './NavBar.vue';
 
@@ -6,7 +7,8 @@ import NavBar from './NavBar.vue';
 export default {
     name: 'AppHeader',
     components: {
-        NavBar
+        NavBar,
+        Logo
     },
     props: [
         "navVoices"
@@ -68,7 +70,7 @@ export default {
         <div class="bottom_section d-flex justify-content-between align-items-center py-4 container ">
 
             <!-- Logo -->
-            <img src="/images/classic_shop_logo1x.png" alt="">
+            <Logo />
 
             <!-- Bottom nav -->
             <NavBar :navVoices />

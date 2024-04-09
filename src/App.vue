@@ -97,12 +97,12 @@ export default {
                                     <!-- real price -->
                                     <span :class="{ 'real_price': product.discountedPrice }" class="pe-2">${{
                                         product.realPrice
-                                    }}</span>
+                                        }}</span>
 
                                     <!--discounted price  -->
                                     <span v-if="product.discountedPrice != false" class="discount_price pe-2">${{
                                         product.discountedPrice
-                                    }}</span>
+                                        }}</span>
                                 </div>
 
                             </div>
@@ -465,6 +465,8 @@ export default {
     </main>
 
     <footer>
+
+        <!-- Newsletter section -->
         <div class="subscribe bg_dark text-white py-5">
             <div class=" py-5 container d-flex justify-content-between align-items-center">
                 <font-awesome-icon :icon="['fas', 'envelope']" />
@@ -475,6 +477,71 @@ export default {
                 </div>
             </div>
         </div>
+
+        <!-- Main footer section -->
+        <div class="text-white bg-black">
+            <div class="featured_section container py-5  ">
+                <div class="row">
+
+                    <!-- Featured -->
+                    <div class="col-3 flex-column">
+                        <h5 class="my-3">FEATURED</h5>
+                        <div class="col-4 d-flex border-bottom justify-content-between w-100 pt-3"
+                            v-for="product in featuredProducts">
+                            <div>
+                                <p>{{ product.name }}</p>
+                                <p>${{ product.realPrice }}</p>
+                            </div>
+
+                            <img class="pb-4" :src="product.image" alt="">
+                        </div>
+                    </div>
+
+                    <!-- On sale -->
+                    <div class="col-3 flex-column">
+                        <h5 class="my-3">ON SALE</h5>
+                        <div class="col-4 d-flex border-bottom justify-content-between w-100 pt-3"
+                            v-for="product in featuredProducts">
+                            <div>
+                                <p>{{ product.name }}</p>
+                                <p>${{ product.realPrice }}</p>
+                            </div>
+
+                            <img class="pb-4" :src="product.image" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Top rated -->
+                    <div class="col-3 flex-column">
+                        <h5 class="my-3">TOP RATED</h5>
+                        <div class="col-4 d-flex border-bottom justify-content-between w-100 pt-3"
+                            v-for="product in featuredProducts">
+                            <div>
+                                <p>{{ product.name }}</p>
+                                <p>${{ product.realPrice }}</p>
+                            </div>
+
+                            <img class="pb-4" :src="product.image" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Latest review -->
+                    <div class="col-3 flex-column">
+                        <h5 class="my-3">LATEST REVIEW</h5>
+                        <div class="col-4 d-flex border-bottom justify-content-between w-100 pt-3"
+                            v-for="product in featuredProducts">
+                            <div>
+                                <p>{{ product.name }}</p>
+                                <p>${{ product.realPrice }}</p>
+                            </div>
+
+                            <img class="pb-4" :src="product.image" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </footer>
 </template>
 
