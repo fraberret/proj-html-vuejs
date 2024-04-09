@@ -1,37 +1,20 @@
 <script>
 export default {
-    name: 'Carousel'
+    name: 'Carousel',
+    props: [
+        "featuredProducts"
+    ]
 }
 </script>
 
 <template>
     <div class="position-relative my-5">
         <div class="row">
-            <div class="col">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci accusamus quis laboriosam
-                voluptatum maiores minima quod voluptas, expedita provident totam dolores officia, saepe nostrum
-                aut, in sit iusto consequuntur ratione.
+            <div v-for="product in featuredProducts" class="col-3">
+                <img :src="product.image" alt="">
             </div>
-            <div class="col">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci accusamus quis laboriosam
-                voluptatum maiores minima quod voluptas, expedita provident totam dolores officia, saepe nostrum
-                aut, in sit iusto consequuntur ratione.
-            </div>
-            <div class="col">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci accusamus quis laboriosam
-                voluptatum maiores minima quod voluptas, expedita provident totam dolores officia, saepe nostrum
-                aut, in sit iusto consequuntur ratione.
-            </div>
-            <div class="col">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci accusamus quis laboriosam
-                voluptatum maiores minima quod voluptas, expedita provident totam dolores officia, saepe nostrum
-                aut, in sit iusto consequuntur ratione.
-            </div>
-            <div class="col">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci accusamus quis laboriosam
-                voluptatum maiores minima quod voluptas, expedita provident totam dolores officia, saepe nostrum
-                aut, in sit iusto consequuntur ratione.
-            </div>
+
+
 
             <div>
                 <button class="position-absolute top-50 start-0 translate-middle-y">click</button>
@@ -45,4 +28,9 @@ export default {
 
 
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+img {
+    width: 100%;
+    object-fit: contain;
+}
+</style>

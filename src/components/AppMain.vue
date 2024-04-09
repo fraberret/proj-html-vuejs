@@ -87,12 +87,12 @@ export default {
                                     <!-- real price -->
                                     <span :class="{ 'real_price': product.discountedPrice }" class="pe-2">${{
                                         product.realPrice
-                                        }}</span>
+                                    }}</span>
 
                                     <!--discounted price  -->
                                     <span v-if="product.discountedPrice != false" class="discount_price pe-2">${{
                                         product.discountedPrice
-                                        }}</span>
+                                    }}</span>
                                 </div>
 
                             </div>
@@ -175,14 +175,14 @@ export default {
                 <!-- Title -->
                 <div class="title d-flex w-100 justify-content-between align-items-center">
                     <div class="line border-top border-bottom"></div>
-                    <h2 class="m-0">Featured Products</h2>
+                    <h2 class="m-0">Best Sellers</h2>
                     <div class="line border-top border-bottom"></div>
                 </div>
 
                 <p>Must have products from our top sellers</p>
             </div>
 
-            <Carousel />
+            <Carousel :featuredProducts />
 
         </div>
 
@@ -213,14 +213,14 @@ export default {
                 <!-- Title -->
                 <div class="title d-flex w-100 justify-content-between align-items-center">
                     <div class="line border-top border-bottom"></div>
-                    <h2 class="m-0">Featured Products</h2>
+                    <h2 class="m-0">New Arrivals</h2>
                     <div class="line border-top border-bottom"></div>
                 </div>
 
                 <p>Must have products from our top sellers</p>
             </div>
 
-            <Carousel />
+            <Carousel :featuredProducts />
 
         </div>
 
@@ -245,11 +245,11 @@ export default {
                 <!-- Title -->
                 <div class="title d-flex w-100 justify-content-between align-items-center">
                     <div class="line border-top border-bottom"></div>
-                    <h2 class="m-0">Featured Products</h2>
+                    <h2 class="m-0">From Our Blog</h2>
                     <div class="line border-top border-bottom"></div>
                 </div>
 
-                <p>Must have products from our top sellers</p>
+                <p>The latest classic shop news</p>
             </div>
 
             <div class="container my-5">
