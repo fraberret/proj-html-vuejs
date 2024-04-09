@@ -232,7 +232,7 @@ export default {
         </div>
 
         <!-- Discount section -->
-        <div class="container_img py-5">
+        <div class="discount_section py-5">
             <div class="container">
                 <div class="row">
                     <div class="col-6  ">
@@ -250,7 +250,7 @@ export default {
         </div>
 
         <!-- New Arrivals section -->
-        <div class="New Arrivals my-5  text-center">
+        <div class="new_Arrivals my-5  text-center">
 
             <!-- Title section -->
             <div class="title_section container">
@@ -304,6 +304,19 @@ export default {
 
         </div>
 
+        <!-- Review section -->
+        <div class="review_section text-center">
+            <div class="container description py-5 text-white">
+                <img class="my-5" src="/images/man_testimonial.png" alt="">
+                <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita deserunt consectetur
+                    perspiciatis mollitia. Quas a optio eius voluptatem. Sint aperiam eos debitis, laudantium sapiente
+                    tempore maxime doloribus vitae ullam quae. Accusantium labore nesciunt temporibus sed autem
+                    voluptatem, neque perferendis veritatis incidunt ullam eos consectetur ipsum? Distinctio sapiente
+                    reiciendis aspernatur eum.</p>
+                <p>Lorem, ipsum dolor.</p>
+            </div>
+        </div>
+
 
     </main>
 </template>
@@ -350,7 +363,15 @@ img {
     margin-top: 5rem;
 }
 
-.container_img {
+.discount_section {
     background-image: url("/images/bkgd_confetti-compressor.jpg");
+}
+
+.review_section {
+    background-image: url("/images/testimonials_home_1_bg.jpg");
+
+    & img {
+        width: 5%;
+    }
 }
 </style>
