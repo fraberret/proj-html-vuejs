@@ -97,12 +97,12 @@ export default {
                                     <!-- real price -->
                                     <span :class="{ 'real_price': product.discountedPrice }" class="pe-2">${{
                                         product.realPrice
-                                    }}</span>
+                                        }}</span>
 
                                     <!--discounted price  -->
                                     <span v-if="product.discountedPrice != false" class="discount_price pe-2">${{
                                         product.discountedPrice
-                                    }}</span>
+                                        }}</span>
                                 </div>
 
                             </div>
@@ -115,27 +115,62 @@ export default {
         <!-- Collections section -->
         <div class=".container-xxl">
             <div class="row g-0">
+
+                <!-- Collection card -->
                 <div class="col-4 border_dot">
                     <div class="ratio ratio-1x1">
 
+                        <!-- image -->
+                        <img src="/images/home1_slide_three_bg_2.jpg" alt="">
+
+                        <!-- description -->
+                        <div
+                            class="description d-flex flex-column justify-content-center align-items-center text-white ">
+                            <h3>Lorem, ipsum dolor.</h3>.
+                            <p>Lorem, ipsum dolor.</p>
+
+                            <!-- button -->
+                            <button class="btn btn-outline-light border-2 rounded-pill py-2 px-4">lorem</button>
+                        </div>
                     </div>
-
-
                 </div>
 
+                <!-- Collection card -->
                 <div class="col-4 border_dot">
                     <div class="ratio ratio-1x1">
 
+                        <!-- image -->
+                        <img src="/images/home1_slide_three_bg_2.jpg" alt="">
+
+                        <!-- description -->
+                        <div
+                            class="description d-flex flex-column justify-content-center align-items-center text-white ">
+                            <h3>Lorem, ipsum dolor.</h3>.
+                            <p>Lorem, ipsum dolor.</p>
+
+                            <!-- button -->
+                            <button class="btn btn-outline-light border-2 rounded-pill py-2 px-4">lorem</button>
+                        </div>
                     </div>
-
-
                 </div>
+
+                <!-- Collection card -->
                 <div class="col-4 border_dot">
                     <div class="ratio ratio-1x1">
 
+                        <!-- image -->
+                        <img src="/images/home1_slide_three_bg_2.jpg" alt="">
+
+                        <!-- description -->
+                        <div
+                            class="description d-flex flex-column justify-content-center align-items-center text-white ">
+                            <h3>Lorem, ipsum dolor.</h3>.
+                            <p>Lorem, ipsum dolor.</p>
+
+                            <!-- button -->
+                            <button class="btn btn-outline-light border-2 rounded-pill py-2 px-4">lorem</button>
+                        </div>
                     </div>
-
-
                 </div>
 
             </div>
@@ -181,5 +216,9 @@ img {
 .line {
 
     width: 35%;
+}
+
+.description {
+    margin-top: 5rem;
 }
 </style>
