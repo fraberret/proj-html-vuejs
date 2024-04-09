@@ -97,12 +97,12 @@ export default {
                                     <!-- real price -->
                                     <span :class="{ 'real_price': product.discountedPrice }" class="pe-2">${{
                                         product.realPrice
-                                        }}</span>
+                                    }}</span>
 
                                     <!--discounted price  -->
                                     <span v-if="product.discountedPrice != false" class="discount_price pe-2">${{
                                         product.discountedPrice
-                                        }}</span>
+                                    }}</span>
                                 </div>
 
                             </div>
@@ -434,6 +434,33 @@ export default {
                     </div>
                 </div>
             </div>
+        </div>
+
+        <!-- Brand logos section -->
+        <div class="brand_section bg_light text-center p-5">
+
+            <h6 class="pb-5">BRAND LOGOS</h6>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <img src="/images/b_logotype_6.png" alt="">
+                    </div>
+                    <div class="col">
+                        <img src="/images/b_logotype_1.png" alt="">
+                    </div>
+                    <div class="col">
+                        <img src="/images/b_logotype_2.png" alt="">
+                    </div>
+                    <div class="col">
+                        <img src="/images/b_logotype_3.png" alt="">
+                    </div>
+                    <div class="col">
+                        <img src="/images/b_logotype_4.png" alt="">
+                    </div>
+                </div>
+            </div>
+
         </div>
 
 
