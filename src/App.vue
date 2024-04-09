@@ -499,24 +499,12 @@ export default {
                         <Socials />
                     </div>
 
-                    <!-- On sale -->
-                    <div class="col-3 flex-column">
-                        <h5 class="my-3">ON SALE</h5>
-                        <div class="col-4 d-flex border-bottom justify-content-between w-100 pt-3"
-                            v-for="product in featuredProducts">
-                            <div>
-                                <p>{{ product.name }}</p>
-                                <p>${{ product.realPrice }}</p>
-                            </div>
 
-                            <img class="pb-4" :src="product.image" alt="">
-                        </div>
-                    </div>
 
                     <!-- Top rated -->
                     <div class="col-3 flex-column">
                         <h5 class="my-3">TOP RATED</h5>
-                        <div class="col-4 d-flex border-bottom justify-content-between w-100 pt-3"
+                        <div class="col-4 d-flex justify-content-between w-100 pt-3"
                             v-for="product in featuredProducts">
                             <div>
                                 <p>{{ product.name }}</p>
@@ -527,18 +515,40 @@ export default {
                         </div>
                     </div>
 
-                    <!-- Latest review -->
+                    <!-- Posts  -->
                     <div class="col-3 flex-column">
-                        <h5 class="my-3">LATEST REVIEW</h5>
-                        <div class="col-4 d-flex border-bottom justify-content-between w-100 pt-3"
-                            v-for="product in featuredProducts">
+                        <h5 class="my-3">RECENT POSTS</h5>
+                        <div class="col-4 d-flex justify-content-between w-100 pt-3">
                             <div>
-                                <p>{{ product.name }}</p>
-                                <p>${{ product.realPrice }}</p>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <p>Lorem ipsum dolor sit amet.</p>
+
                             </div>
 
-                            <img class="pb-4" :src="product.image" alt="">
+
                         </div>
+
+                    </div>
+
+                    <!-- Tags -->
+                    <div class="col-3 flex-column">
+                        <h5 class="my-3">TAGS</h5>
+                        <div class="col-4 d-flex justify-content-between w-100 pt-3">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <p>Lorem ipsum dolor sit amet.</p>
+
+                            </div>
+
+
+                        </div>
+
                     </div>
                 </div>
             </div>
