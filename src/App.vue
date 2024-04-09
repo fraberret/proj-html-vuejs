@@ -97,12 +97,12 @@ export default {
                                     <!-- real price -->
                                     <span :class="{ 'real_price': product.discountedPrice }" class="pe-2">${{
                                         product.realPrice
-                                    }}</span>
+                                        }}</span>
 
                                     <!--discounted price  -->
                                     <span v-if="product.discountedPrice != false" class="discount_price pe-2">${{
                                         product.discountedPrice
-                                    }}</span>
+                                        }}</span>
                                 </div>
 
                             </div>
@@ -113,7 +113,7 @@ export default {
         </div>
 
         <!-- Collections section -->
-        <div class=".container-xxl my-5">
+        <div class="my-5">
             <div class="row g-0">
 
                 <!-- Collection card -->
@@ -231,6 +231,24 @@ export default {
 
         </div>
 
+        <!-- Discount section -->
+        <div class="container_img py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6  ">
+                        <div class="ratio ratio-16x9 border_dot">
+
+                        </div>
+                    </div>
+                    <div class="col-6 ">
+                        <div class="ratio ratio-16x9 border_dot">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
     </main>
 </template>
@@ -275,5 +293,9 @@ img {
 
 .description {
     margin-top: 5rem;
+}
+
+.container_img {
+    background-image: url("/images/bkgd_confetti-compressor.jpg");
 }
 </style>
