@@ -97,12 +97,12 @@ export default {
                                     <!-- real price -->
                                     <span :class="{ 'real_price': product.discountedPrice }" class="pe-2">${{
                                         product.realPrice
-                                        }}</span>
+                                    }}</span>
 
                                     <!--discounted price  -->
                                     <span v-if="product.discountedPrice != false" class="discount_price pe-2">${{
                                         product.discountedPrice
-                                        }}</span>
+                                    }}</span>
                                 </div>
 
                             </div>
@@ -110,11 +110,37 @@ export default {
                     </div>
                 </div>
             </div>
-
-
-
-
         </div>
+
+        <!-- Collections section -->
+        <div class=".container-xxl">
+            <div class="row g-0">
+                <div class="col-4 border_dot">
+                    <div class="ratio ratio-1x1">
+
+                    </div>
+
+
+                </div>
+
+                <div class="col-4 border_dot">
+                    <div class="ratio ratio-1x1">
+
+                    </div>
+
+
+                </div>
+                <div class="col-4 border_dot">
+                    <div class="ratio ratio-1x1">
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
 
     </main>
 </template>
