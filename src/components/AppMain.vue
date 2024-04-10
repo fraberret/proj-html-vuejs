@@ -111,7 +111,7 @@ export default {
                     <template
                         v-for="(product, index) in Products.filter(item => item.featured && item.gender === this.gender).slice(0, 4)"
                         :key="index">
-                        <div class="col">
+                        <div class="col-3">
                             <div class="card h-100 border-0">
 
                                 <!--image -->
