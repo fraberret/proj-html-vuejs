@@ -32,8 +32,8 @@ export const featuredProducts = [
         "name": 'Black Elegant Leather Jacket',
         "image": '/images/black_elegant_leather_jacket-400x520.jpg',
         "tags": 'Men, Jackets, Jeans',
-        "realPrice": 125,
-        "discountedPrice": false,
+        "realPrice": 235,
+        "discountedPrice": 200,
         "featured": true,
         "topRated": true,
         "LatestReviews": true,
@@ -81,7 +81,7 @@ export const featuredProducts = [
         "LatestReviews": false,
         "onSale": false,
         "newArrival": true,
-        "bestSeller": false,
+        "bestSeller": true,
         "gender": "women"
     },
     {
@@ -95,7 +95,7 @@ export const featuredProducts = [
         "LatestReviews": false,
         "onSale": false,
         "newArrival": true,
-        "bestSeller": false,
+        "bestSeller": true,
         "gender": "women"
     },
     {
@@ -122,7 +122,7 @@ export const featuredProducts = [
         "LatestReviews": true,
         "onSale": true,
         "newArrival": true,
-        "bestSeller": false,
+        "bestSeller": true,
         "gender": "women"
     },
     {

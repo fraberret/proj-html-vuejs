@@ -10,7 +10,7 @@ export default {
 <template>
     <div class="position-relative my-5">
         <div class="row">
-            <div v-for="product in featuredProducts" class="col-3">
+            <div v-for="product in featuredProducts" class="col">
                 <img :src="product.image" alt="">
             </div>
 

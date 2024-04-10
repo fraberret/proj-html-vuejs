@@ -10,7 +10,13 @@ export default {
 
     props: [
         "featuredProducts"
-    ]
+    ],
+    computed: {
+        bestSellerProducts() {
+
+            return this.featuredProducts.filter(product => product.bestSeller);
+        }
+    }
 }
 </script>
 
@@ -90,12 +96,12 @@ export default {
                                         <!-- real price -->
                                         <span :class="{ 'real_price': product.discountedPrice }" class="pe-2">${{
                                             product.realPrice
-                                        }}</span>
+                                            }}</span>
 
                                         <!--discounted price  -->
                                         <span v-if="product.discountedPrice != false" class="discount_price pe-2">${{
                                             product.discountedPrice
-                                        }}</span>
+                                            }}</span>
                                     </div>
 
                                 </div>
@@ -171,6 +177,7 @@ export default {
         </div>
 
         <!-- Best seller section -->
+
         <div class="best_seller container text-center">
 
             <!-- Title section -->
@@ -186,7 +193,7 @@ export default {
                 <p>Must have products from our top sellers</p>
             </div>
 
-            <Carousel :featuredProducts />
+            <Carousel :featuredProducts="bestSellerProducts" />
 
         </div>
 
