@@ -6,7 +6,7 @@ export default {
     name: 'AppFooter',
 
     props: [
-        "featuredProducts"
+        "Products"
     ],
     components: {
         Socials,
@@ -56,8 +56,7 @@ export default {
                     <div class="featured_section col-3 flex-column">
                         <h5 class="mb-5">TOP RATED PRODUCTS</h5>
                         <div class="col-4 d-flex justify-content-between w-100 pt-3"
-                            v-for="(product, index) in featuredProducts.filter(item => item.topRated).slice(0, 3)"
-                            :key="index">
+                            v-for="(product, index) in Products.filter(item => item.topRated).slice(0, 3)" :key="index">
                             <div>
                                 <p>{{ product.name }}</p>
                                 <div class="text-primary" v-if="product.vote != false">
@@ -97,7 +96,7 @@ export default {
                         <h5 class="mb-5">TAGS</h5>
                         <div class="col-4 d-flex justify-content-between w-100 pt-3">
                             <div class="d-flex flex-wrap gap-2">
-                                <template v-for="tag in featuredProducts">
+                                <template v-for="tag in Products">
                                     <span class="border px-2">{{ tag.tags }}</span>
 
                                 </template>

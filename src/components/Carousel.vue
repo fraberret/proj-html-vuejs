@@ -2,7 +2,7 @@
 export default {
     name: 'Carousel',
     props: [
-        "featuredProducts"
+        "Products"
     ]
 }
 </script>
@@ -10,7 +10,7 @@ export default {
 <template>
     <div class="position-relative my-5">
         <div class="row">
-            <div v-for="product in featuredProducts" class="col">
+            <div v-for="product in Products" class="col">
                 <img :src="product.image" alt="">
             </div>
 

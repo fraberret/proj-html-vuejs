@@ -19,7 +19,7 @@ export default {
     },
 
     props: [
-        "featuredProducts",
+        "Products",
         "collections",
         "blog"
     ],
@@ -40,11 +40,11 @@ export default {
     computed: {
         bestSellerProducts() {
 
-            return this.featuredProducts.filter(product => product.bestSeller);
+            return this.Products.filter(product => product.bestSeller);
         },
         newArrivalProducts() {
 
-            return this.featuredProducts.filter(product => product.newArrival);
+            return this.Products.filter(product => product.newArrival);
         }
     },
     mounted() {
@@ -109,7 +109,7 @@ export default {
 
                     <!-- Product -->
                     <template
-                        v-for="(product, index) in featuredProducts.filter(item => item.featured && item.gender === this.gender).slice(0, 4)"
+                        v-for="(product, index) in Products.filter(item => item.featured && item.gender === this.gender).slice(0, 4)"
                         :key="index">
                         <div class="col">
                             <div class="card h-100 border-0">
@@ -181,7 +181,7 @@ export default {
                 <p>Must have products from our top sellers</p>
             </div>
 
-            <Carousel :featuredProducts="bestSellerProducts" />
+            <Carousel :Products="bestSellerProducts" />
 
         </div>
 
@@ -233,7 +233,7 @@ export default {
                 <p>Must have products from our top sellers</p>
             </div>
 
-            <Carousel :featuredProducts="newArrivalProducts" />
+            <Carousel :Products="newArrivalProducts" />
 
         </div>
 
@@ -296,8 +296,7 @@ export default {
                 <div class="col-3 flex-column">
                     <h5 class="my-3">FEATURED</h5>
                     <div class="col-4 d-flex border-bottom justify-content-between w-100 pt-3"
-                        v-for="(product, index) in featuredProducts.filter(item => item.featured).slice(0, 3)"
-                        :key="index">
+                        v-for="(product, index) in Products.filter(item => item.featured).slice(0, 3)" :key="index">
                         <div>
                             <p>{{ product.name }}</p>
                             <div class="text-primary" v-if="product.vote != false">
@@ -318,8 +317,7 @@ export default {
                 <div class="col-3 flex-column">
                     <h5 class="my-3">ON SALE</h5>
                     <div class="col-4 d-flex border-bottom justify-content-between w-100 pt-3"
-                        v-for="(product, index) in featuredProducts.filter(item => item.onSale).slice(0, 3)"
-                        :key="index">
+                        v-for="(product, index) in Products.filter(item => item.onSale).slice(0, 3)" :key="index">
                         <div>
                             <p>{{ product.name }}</p>
                             <div class="text-primary" v-if="product.vote != false">
@@ -340,8 +338,7 @@ export default {
                 <div class="col-3 flex-column">
                     <h5 class="my-3">TOP RATED</h5>
                     <div class="col-4 d-flex border-bottom justify-content-between w-100 pt-3"
-                        v-for="(product, index) in featuredProducts.filter(item => item.topRated).slice(0, 3)"
-                        :key="index">
+                        v-for="(product, index) in Products.filter(item => item.topRated).slice(0, 3)" :key="index">
                         <div>
                             <p>{{ product.name }}</p>
                             <div class="text-primary" v-if="product.vote != false">
@@ -362,7 +359,7 @@ export default {
                 <div class="col-3 flex-column">
                     <h5 class="my-3">LATEST REVIEW</h5>
                     <div class="col-4 d-flex border-bottom justify-content-between w-100 pt-3"
-                        v-for="(product, index) in featuredProducts.filter(item => item.LatestReviews).slice(0, 3)"
+                        v-for="(product, index) in Products.filter(item => item.LatestReviews).slice(0, 3)"
                         :key="index">
                         <div>
                             <p>{{ product.name }}</p>

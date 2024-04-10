@@ -1,6 +1,6 @@
 <script>
 import { collections } from './data.js';
-import { featuredProducts } from './data.js';
+import { Products } from './data.js';
 import { navVoices } from './data.js';
 import { blog } from './data.js'
 import AppHeader from './components/AppHeader.vue';
@@ -22,7 +22,7 @@ export default {
     data() {
         return {
             navVoices,
-            featuredProducts,
+            Products,
             collections,
             blog
         }
@@ -35,9 +35,9 @@ export default {
 
     <AppHeader :navVoices />
 
-    <AppMain :featuredProducts :collections :blog />
+    <AppMain :Products :collections :blog />
 
-    <AppFooter :featuredProducts />
+    <AppFooter :Products />
 
 
 </template>

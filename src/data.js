@@ -27,7 +27,7 @@ export const navVoices = [
 ];
 
 
-export const featuredProducts = [
+export const Products = [
     {
         "name": 'Black Elegant Leather Jacket',
         "image": '/images/black_elegant_leather_jacket-400x520.jpg',
