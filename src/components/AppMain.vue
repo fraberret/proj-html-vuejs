@@ -1,11 +1,13 @@
 <script>
+import Prices from './Prices.vue';
 import Carousel from './Carousel.vue';
 
 export default {
     name: 'AppMain',
 
     components: {
-        Carousel
+        Carousel,
+        Prices
     },
 
     props: [
@@ -80,13 +82,13 @@ export default {
                         v-for="(product, index) in featuredProducts.filter(item => item.featured && item.gender === 'men').slice(0, 4)"
                         :key="index">
                         <div class="col">
-                            <div class="card border-0">
+                            <div class="card h-100 border-0">
 
                                 <!--image -->
                                 <img :src="product.image" alt="">
 
                                 <!--details -->
-                                <div class="card-body text-start">
+                                <div class="h-100 card-body text-start">
 
                                     <!-- name -->
                                     <h5>{{ product.name }}</h5>
@@ -95,20 +97,11 @@ export default {
                                     <p>{{ product.tags }}</p>
 
                                     <!-- price section -->
-                                    <div class="price">
-
-                                        <!-- real price -->
-                                        <span :class="{ 'real_price': product.discountedPrice }" class="pe-2">${{
-                                            product.realPrice
-                                        }}</span>
-
-                                        <!--discounted price  -->
-                                        <span v-if="product.discountedPrice != false" class="discount_price pe-2">${{
-                                            product.discountedPrice
-                                        }}</span>
+                                    <div class="position-absolute bottom-0">
+                                        <Prices :product />
                                     </div>
-
                                 </div>
+
                             </div>
                         </div>
                     </template>
@@ -321,7 +314,7 @@ export default {
                         :key="index">
                         <div>
                             <p>{{ product.name }}</p>
-                            <p>${{ product.realPrice }}</p>
+                            <Prices :product />
                         </div>
 
                         <img class="pb-4" :src="product.image" alt="">
@@ -336,7 +329,7 @@ export default {
                         :key="index">
                         <div>
                             <p>{{ product.name }}</p>
-                            <p>${{ product.realPrice }}</p>
+                            <Prices :product />
                         </div>
 
                         <img class="pb-4" :src="product.image" alt="">
@@ -351,7 +344,7 @@ export default {
                         :key="index">
                         <div>
                             <p>{{ product.name }}</p>
-                            <p>${{ product.realPrice }}</p>
+                            <Prices :product />
                         </div>
 
                         <img class="pb-4" :src="product.image" alt="">
@@ -366,7 +359,7 @@ export default {
                         :key="index">
                         <div>
                             <p>{{ product.name }}</p>
-                            <p>${{ product.realPrice }}</p>
+                            <Prices :product />
                         </div>
 
                         <img class="pb-4" :src="product.image" alt="">

@@ -1,4 +1,5 @@
 <script>
+import Prices from './Prices.vue'
 import Socials from './Socials.vue';
 
 export default {
@@ -8,7 +9,8 @@ export default {
         "featuredProducts"
     ],
     components: {
-        Socials
+        Socials,
+        Prices
     }
 }
 </script>
@@ -50,12 +52,13 @@ export default {
 
                     <!-- Top rated -->
                     <div class="col-3 flex-column">
-                        <h5 class="my-3">TOP RATED</h5>
+                        <h5 class="my-3">TOP RATED PRODUCTS</h5>
                         <div class="col-4 d-flex justify-content-between w-100 pt-3"
-                            v-for="product in featuredProducts">
+                            v-for="(product, index) in featuredProducts.filter(item => item.topRated).slice(0, 3)"
+                            :key="index">
                             <div>
                                 <p>{{ product.name }}</p>
-                                <p>${{ product.realPrice }}</p>
+                                <Prices :product />
                             </div>
 
                             <img class="pb-4" :src="product.image" alt="">

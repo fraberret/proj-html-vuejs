@@ -12,22 +12,26 @@ header {
 
 main {
 
-    & .price {
-        color: $accent_light;
-        font-size: 20px;
-
-        & .discount_price {
-
-            margin-right: 0.5rem;
-
+    .featured_products {
+        & .price {
+            color: $accent_light;
+            font-size: 20px;
         }
+    }
 
-        & .real_price {
-            text-decoration: line-through;
 
-        }
+    & .discount_price {
 
+        margin-right: 0.5rem;
 
     }
+
+    & .real_price {
+        text-decoration: line-through;
+
+    }
+
+
+
 
 }
