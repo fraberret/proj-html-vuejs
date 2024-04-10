@@ -1,10 +1,15 @@
 <script>
+import Socials from './Socials.vue';
+
 export default {
     name: 'AppFooter',
 
     props: [
         "featuredProducts"
-    ]
+    ],
+    components: {
+        Socials
+    }
 }
 </script>
 

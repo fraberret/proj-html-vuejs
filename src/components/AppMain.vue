@@ -87,12 +87,12 @@ export default {
                                     <!-- real price -->
                                     <span :class="{ 'real_price': product.discountedPrice }" class="pe-2">${{
                                         product.realPrice
-                                    }}</span>
+                                        }}</span>
 
                                     <!--discounted price  -->
                                     <span v-if="product.discountedPrice != false" class="discount_price pe-2">${{
                                         product.discountedPrice
-                                    }}</span>
+                                        }}</span>
                                 </div>
 
                             </div>
@@ -205,7 +205,7 @@ export default {
         </div>
 
         <!-- New Arrivals section -->
-        <div class="new_Arrivals my-5  text-center">
+        <div class="new_Arrivals my-5 container-xxl  text-center">
 
             <!-- Title section -->
             <div class="title_section container">

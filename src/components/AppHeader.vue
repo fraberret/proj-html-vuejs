@@ -1,6 +1,6 @@
 <script>
 import Logo from './Logo.vue'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+
 import NavBar from './NavBar.vue';
 import Socials from './Socials.vue'
 
