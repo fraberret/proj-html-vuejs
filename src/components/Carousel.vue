@@ -17,7 +17,7 @@ export default {
 
 
             <div>
-                <button class="position-absolute top-50 start-0 translate-middle-y">click</button>
+                <button class="position-absolute top-50 start-0 translate-middle-y">&leftarrow;</button>
                 <button class="position-absolute top-50 end-0 translate-middle-y">click</button>
 
             </div>
@@ -33,5 +33,12 @@ export default {
 img {
     width: 100%;
     object-fit: contain;
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0.285);
+    border: none;
+    color: white;
+    padding: 1rem 0.5rem;
 }
 </style>

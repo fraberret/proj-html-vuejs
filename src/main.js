@@ -13,6 +13,8 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 
+
+
 library.add(faFacebookF, faTwitter, faInstagram, faYoutube, faChevronDown, faShoppingCart, faSearch, faEnvelope, faStar)
 
 createApp(App)

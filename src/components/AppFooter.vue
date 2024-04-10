@@ -21,8 +21,10 @@ export default {
         <!-- Newsletter section -->
         <div class="subscribe bg_dark text-white py-5">
             <div class=" py-5 container d-flex justify-content-between align-items-center">
-                <font-awesome-icon :icon="['fas', 'envelope']" />
-                <h4 class="m-0">Lorem ipsum dolor sit amet consectetur.</h4>
+                <div class="mail bg-black rounded-circle">
+                    <font-awesome-icon :icon="['fas', 'envelope']" />
+                </div>
+                <h3 class="m-0">Subscribe now and get special offers</h3>
                 <div>
                     <input type="text" class="py-2 px-4 rounded-pill" placeholder="Insert your email">
                     <button class="bg_accent_light btn text-light rounded-pill py-2 px-5  ms-2">SEND</button>
@@ -39,11 +41,11 @@ export default {
                     <div class="col-3 flex-column">
                         <img class="logo" src="/images/classic_shop_logo_footer.png" alt="">
                         <div class="my-5 body">
-                            <p>Lorem ipsum dolor sit amet.</p>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>12345 North Main Street</p>
+                            <p>New York, NY 555555</p>
+                            <p>Phone 1.800.555.6789</p>
+                            <p>Email: info@company.com</p>
+                            <p>Web: Theme-fusion.com</p>
                         </div>
                         <Socials />
                     </div>
@@ -77,11 +79,11 @@ export default {
                         <h5 class="mb-5">RECENT POSTS</h5>
                         <div class="col-4 d-flex justify-content-between w-100 pt-3">
                             <div>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                                <p>Lorem ipsum dolor sit amet.</p>
+                                <p class="border_bottom">Lorem ipsum dolor sit amet.</p>
+                                <p class="border_bottom">Lorem ipsum dolor sit amet.</p>
+                                <p class="border_bottom">Lorem ipsum dolor sit amet.</p>
+                                <p class="border_bottom">Lorem ipsum dolor sit amet.</p>
+                                <p class="border_bottom">Lorem ipsum dolor sit amet.</p>
 
                             </div>
 
@@ -94,12 +96,11 @@ export default {
                     <div class="col-3 flex-column">
                         <h5 class="mb-5">TAGS</h5>
                         <div class="col-4 d-flex justify-content-between w-100 pt-3">
-                            <div>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                                <p>Lorem ipsum dolor sit amet.</p>
+                            <div class="d-flex flex-wrap gap-2">
+                                <template v-for="tag in featuredProducts">
+                                    <span class="border px-2">{{ tag.tags }}</span>
+
+                                </template>
 
                             </div>
 
@@ -113,7 +114,8 @@ export default {
 
         <!-- COpyright section -->
         <div class="bg-black text-center text-white py-5">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, repudiandae.</p>
+            <p>© Copyright 2024-2025 | Avada Theme by Theme Fusion | All Rights Reserved | Powered by Francesco Berretta
+            </p>
             <img src="/images/payment_cards_footer.png" alt="">
         </div>
 
@@ -138,5 +140,15 @@ export default {
 
 .logo {
     width: 70%;
+}
+
+.mail {
+    background-color: black;
+    padding: 12px 16px;
+}
+
+.border_bottom {
+    border-bottom: 1px solid rgba(146, 140, 140, 0.463);
+
 }
 </style>

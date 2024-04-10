@@ -215,12 +215,14 @@ export default {
         <div class="review_section text-center">
             <div class="container description py-5 text-white">
                 <img class="my-5" src="/images/man_testimonial.png" alt="">
-                <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita deserunt consectetur
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita deserunt consectetur
                     perspiciatis mollitia. Quas a optio eius voluptatem. Sint aperiam eos debitis, laudantium sapiente
-                    tempore maxime doloribus vitae ullam quae. Accusantium labore nesciunt temporibus sed autem
-                    voluptatem, neque perferendis veritatis incidunt ullam eos consectetur ipsum? Distinctio sapiente
-                    reiciendis aspernatur eum.</p>
-                <p>Lorem, ipsum dolor.</p>
+                    tempore maxime doloribus vitae ullam quae.</p>
+                <p><b>Daro Pineda</b>. Theme Fusion</p>
+                <div class="d-flex justify-content-center">
+                    <div class="me-2 circle bg-white rounded-circle"></div>
+                    <div class="circle border rounded-circle "></div>
+                </div>
             </div>
         </div>
 
@@ -247,8 +249,8 @@ export default {
                         </div>
 
                         <div class="body text-start ">
-                            <h5>{{ post.name }}</h5>
-                            <p>{{ post.date }} | {{ post.comments }} comments</p>
+                            <h5 class="py-2">{{ post.name }}</h5>
+                            <p class="pb-3">{{ post.date }} | {{ post.comments }} comments</p>
                             <p>{{ post.description }}</p>
                         </div>
                     </div>
@@ -357,7 +359,7 @@ export default {
         <!-- Brand logos section -->
         <div class="brand_section bg_light text-center p-5">
 
-            <h6 class="pb-5">BRAND LOGOS</h6>
+            <h6 class="brand_logos_title pb-5 cl_dark ">BRAND LOGOS</h6>
 
             <div class="container">
                 <div class="row">
@@ -441,5 +443,16 @@ img {
     & img {
         width: 20%;
     }
+}
+
+.brand_logos_title {
+
+    letter-spacing: 0.5rem;
+
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
 }
 </style>

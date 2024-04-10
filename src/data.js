@@ -31,7 +31,7 @@ export const featuredProducts = [
     {
         "name": 'Black Elegant Leather Jacket',
         "image": '/images/black_elegant_leather_jacket-400x520.jpg',
-        "tags": 'Men, Jackets, Jeans',
+        "tags": 'Men',
         "vote": 5,
         "realPrice": 235,
         "discountedPrice": 200,
@@ -46,7 +46,7 @@ export const featuredProducts = [
     {
         "name": 'Blue Leather Jacket',
         "image": '/images/blue_leather_jacket-400x520.jpg',
-        "tags": 'Men, Jackets, Jeans',
+        "tags": 'Blue',
         "vote": false,
         "realPrice": 80,
         "discountedPrice": 60,
@@ -61,7 +61,7 @@ export const featuredProducts = [
     {
         "name": 'Brown Dress Shoes',
         "image": '/images/brown_dress_shoes-400x520.jpg',
-        "tags": 'Men, Jackets, Jeans',
+        "tags": 'Shoes',
         "vote": false,
         "realPrice": 50,
         "discountedPrice": 30,
@@ -76,7 +76,7 @@ export const featuredProducts = [
     {
         "name": 'Hipster Black top',
         "image": '/images/hipster_black_top-400x520.jpg',
-        "tags": 'Men, Jackets, Jeans',
+        "tags": 'Top',
         "vote": false,
         "realPrice": 57,
         "discountedPrice": false,
@@ -91,7 +91,7 @@ export const featuredProducts = [
     {
         "name": 'Modern Love Tee',
         "image": '/images/modern_love_tee-400x520.jpg',
-        "tags": 'Men, Jackets, Jeans',
+        "tags": 'Tee',
         "vote": 5,
         "realPrice": 50,
         "discountedPrice": 30,
@@ -106,7 +106,7 @@ export const featuredProducts = [
     {
         "name": 'Leather Gloves',
         "image": '/images/leather_gloves-400x520.jpg',
-        "tags": 'Men, Jackets, Jeans',
+        "tags": 'Leather',
         "vote": 5,
         "realPrice": 45,
         "discountedPrice": false,
@@ -120,7 +120,7 @@ export const featuredProducts = [
     {
         "name": 'Spring Printed Dress',
         "image": '/images/spring_printed_dress-400x520.jpg',
-        "tags": 'Men, Jackets, Jeans',
+        "tags": 'Women',
         "vote": 5,
         "realPrice": 47,
         "discountedPrice": false,
@@ -135,7 +135,7 @@ export const featuredProducts = [
     {
         "name": 'Black Leather Jacket',
         "image": '/images/black_leather_jacket-400x520.jpg',
-        "tags": 'Men, Jackets, Jeans',
+        "tags": 'Casual',
         "vote": false,
         "realPrice": 125,
         "discountedPrice": false,
@@ -150,7 +150,7 @@ export const featuredProducts = [
     {
         "name": 'Black Leather Suit',
         "image": '/images/black_leather_suit-400x520.jpg',
-        "tags": 'Men, Jackets',
+        "tags": 'Suit',
         "vote": 5,
         "realPrice": 176,
         "discountedPrice": false,
@@ -165,7 +165,7 @@ export const featuredProducts = [
     {
         "name": 'Blue Jacket & Stripe Tee',
         "image": '/images/blue_jacket_and_white_stripe_tee-400x520.jpg',
-        "tags": 'Men, Jackets, Suits',
+        "tags": 'Stripe',
         "vote": 5,
         "realPrice": 580,
         "discountedPrice": false,
@@ -180,7 +180,7 @@ export const featuredProducts = [
     {
         "name": 'Modern Black Leather Suit',
         "image": '/images/modern_black_leather_suit-400x520.jpg',
-        "tags": 'Men, Jackets',
+        "tags": 'Modern',
         "vote": 5,
         "realPrice": 96,
         "discountedPrice": false,
