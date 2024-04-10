@@ -135,7 +135,7 @@ export const featuredProducts = [
         "topRated": true,
         "LatestReviews": true,
         "onSale": true,
-        "newArrival": true,
+        "newArrival": false,
         "bestSeller": true,
         "gender": "women"
     },
