@@ -46,6 +46,9 @@ export default {
 
             return this.featuredProducts.filter(product => product.newArrival);
         }
+    },
+    mounted() {
+        this.gender = 'men'
     }
 }
 </script>
