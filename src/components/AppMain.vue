@@ -66,38 +66,41 @@ export default {
                 <div class="row">
 
                     <!-- Product -->
-                    <div class="col" v-for="product in featuredProducts">
-                        <div class="card border-0">
+                    <template v-for="(product, index) in featuredProducts.filter(item => item.featured).slice(0, 4)"
+                        :key="index">
+                        <div class="col">
+                            <div class="card border-0">
 
-                            <!--image -->
-                            <img :src="product.image" alt="">
+                                <!--image -->
+                                <img :src="product.image" alt="">
 
-                            <!--details -->
-                            <div class="card-body text-start">
+                                <!--details -->
+                                <div class="card-body text-start">
 
-                                <!-- name -->
-                                <h5>{{ product.name }}</h5>
+                                    <!-- name -->
+                                    <h5>{{ product.name }}</h5>
 
-                                <!-- tags -->
-                                <p>{{ product.tags }}</p>
+                                    <!-- tags -->
+                                    <p>{{ product.tags }}</p>
 
-                                <!-- price section -->
-                                <div class="price">
+                                    <!-- price section -->
+                                    <div class="price">
 
-                                    <!-- real price -->
-                                    <span :class="{ 'real_price': product.discountedPrice }" class="pe-2">${{
-                                        product.realPrice
-                                        }}</span>
+                                        <!-- real price -->
+                                        <span :class="{ 'real_price': product.discountedPrice }" class="pe-2">${{
+                                            product.realPrice
+                                            }}</span>
 
-                                    <!--discounted price  -->
-                                    <span v-if="product.discountedPrice != false" class="discount_price pe-2">${{
-                                        product.discountedPrice
-                                        }}</span>
+                                        <!--discounted price  -->
+                                        <span v-if="product.discountedPrice != false" class="discount_price pe-2">${{
+                                            product.discountedPrice
+                                            }}</span>
+                                    </div>
+
                                 </div>
-
                             </div>
                         </div>
-                    </div>
+                    </template>
                 </div>
             </div>
         </div>
