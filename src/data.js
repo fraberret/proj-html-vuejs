@@ -184,5 +184,24 @@ export const featuredProducts = [
 
 
 
+];
+
+
+export const collections = [
+    {
+        "name": "Winter",
+        "image": "/images/winter_collection_bg.jpg",
+        "description": "STYLISH AND WARM"
+    },
+    {
+        "name": "Spring",
+        "image": "/images/spring_collection_bg.jpg",
+        "description": "BRIGHT AND COLORFUL"
+    },
+    {
+        "name": "Autumn",
+        "image": "/images/autumn_collection_bg.jpg",
+        "description": "RICH AND COMFORTABLE"
+    },
 ]
 

@@ -1,17 +1,20 @@
 <script>
 import Prices from './Prices.vue';
 import Carousel from './Carousel.vue';
+import ViewMoreButton from './ViewMoreButton.vue'
 
 export default {
     name: 'AppMain',
 
     components: {
         Carousel,
-        Prices
+        Prices,
+        ViewMoreButton
     },
 
     props: [
-        "featuredProducts"
+        "featuredProducts",
+        "collections"
     ],
     computed: {
         bestSellerProducts() {
@@ -97,7 +100,7 @@ export default {
                                     <p>{{ product.tags }}</p>
 
                                     <!-- price section -->
-                                    <div class="position-absolute bottom-0">
+                                    <div class="price position-absolute bottom-0">
                                         <Prices :product />
                                     </div>
                                 </div>
@@ -114,62 +117,23 @@ export default {
             <div class="row g-0">
 
                 <!-- Collection card -->
-                <div class="col-4 border_dot">
+                <div v-for="collection in collections" class="col-4 border_dot">
                     <div class="ratio ratio-1x1">
 
                         <!-- image -->
-                        <img src="/images/home1_slide_three_bg_2.jpg" alt="">
+                        <img :src="collection.image" alt="">
 
                         <!-- description -->
                         <div
                             class="description d-flex flex-column justify-content-center align-items-center text-white ">
-                            <h3>Lorem, ipsum dolor.</h3>.
-                            <p>Lorem, ipsum dolor.</p>
+                            <h3 class="m-0">{{ collection.name }} Collection</h3>.
+                            <p>{{ collection.description }}</p>
 
                             <!-- button -->
-                            <button class="btn btn-outline-light border-2 rounded-pill py-2 px-4">lorem</button>
+                            <ViewMoreButton />
                         </div>
                     </div>
                 </div>
-
-                <!-- Collection card -->
-                <div class="col-4 border_dot">
-                    <div class="ratio ratio-1x1">
-
-                        <!-- image -->
-                        <img src="/images/home1_slide_three_bg_2.jpg" alt="">
-
-                        <!-- description -->
-                        <div
-                            class="description d-flex flex-column justify-content-center align-items-center text-white ">
-                            <h3>Lorem, ipsum dolor.</h3>.
-                            <p>Lorem, ipsum dolor.</p>
-
-                            <!-- button -->
-                            <button class="btn btn-outline-light border-2 rounded-pill py-2 px-4">lorem</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Collection card -->
-                <div class="col-4 border_dot">
-                    <div class="ratio ratio-1x1">
-
-                        <!-- image -->
-                        <img src="/images/home1_slide_three_bg_2.jpg" alt="">
-
-                        <!-- description -->
-                        <div
-                            class="description d-flex flex-column justify-content-center align-items-center text-white ">
-                            <h3>Lorem, ipsum dolor.</h3>.
-                            <p>Lorem, ipsum dolor.</p>
-
-                            <!-- button -->
-                            <button class="btn btn-outline-light border-2 rounded-pill py-2 px-4">lorem</button>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
 
@@ -198,14 +162,18 @@ export default {
         <div class="discount_section py-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-6  ">
+                    <div class="col-6">
                         <div class="ratio ratio-16x9 border_dot">
-
+                            <img src="/images/promo_box_1_bg.jpg">
+                            <div class="d-flex flex-column p-5  justify-content-center text-start text-white">
+                                <h1>70% Off</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, illo.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-6 ">
-                        <div class="ratio ratio-16x9 border_dot">
-
+                    <div class=" col-6 ">
+                        <div class=" ratio ratio-16x9 border_dot">
+                            <img src="/images/promo_box_2_bg.jpg">
                         </div>
                     </div>
                 </div>

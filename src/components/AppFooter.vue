@@ -31,13 +31,13 @@ export default {
         </div>
 
         <!-- Main footer section -->
-        <div class="text-white bg-black">
-            <div class="featured_section container py-5  ">
+        <div class="text-white bg_darkest">
+            <div class="footer_section container py-5  ">
                 <div class="row">
 
                     <!-- Featured -->
                     <div class="col-3 flex-column">
-                        <img src="/images/classic_shop_logo_footer.png" width="100" alt="">
+                        <img class="logo" src="/images/classic_shop_logo_footer.png" alt="">
                         <div class="my-5 body">
                             <p>Lorem ipsum dolor sit amet.</p>
                             <p>Lorem ipsum dolor sit amet.</p>
@@ -51,8 +51,8 @@ export default {
 
 
                     <!-- Top rated -->
-                    <div class="col-3 flex-column">
-                        <h5 class="my-3">TOP RATED PRODUCTS</h5>
+                    <div class="featured_section col-3 flex-column">
+                        <h5 class="mb-5">TOP RATED PRODUCTS</h5>
                         <div class="col-4 d-flex justify-content-between w-100 pt-3"
                             v-for="(product, index) in featuredProducts.filter(item => item.topRated).slice(0, 3)"
                             :key="index">
@@ -67,7 +67,7 @@ export default {
 
                     <!-- Posts  -->
                     <div class="col-3 flex-column">
-                        <h5 class="my-3">RECENT POSTS</h5>
+                        <h5 class="mb-5">RECENT POSTS</h5>
                         <div class="col-4 d-flex justify-content-between w-100 pt-3">
                             <div>
                                 <p>Lorem ipsum dolor sit amet.</p>
@@ -85,7 +85,7 @@ export default {
 
                     <!-- Tags -->
                     <div class="col-3 flex-column">
-                        <h5 class="my-3">TAGS</h5>
+                        <h5 class="mb-5">TAGS</h5>
                         <div class="col-4 d-flex justify-content-between w-100 pt-3">
                             <div>
                                 <p>Lorem ipsum dolor sit amet.</p>
@@ -125,5 +125,11 @@ export default {
     & img {
         width: 20%;
     }
+
+
+}
+
+.logo {
+    width: 70%;
 }
 </style>
