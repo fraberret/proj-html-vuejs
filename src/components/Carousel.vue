@@ -18,7 +18,7 @@ export default {
 
             <div>
                 <button class="position-absolute top-50 start-0 translate-middle-y">&leftarrow;</button>
-                <button class="position-absolute top-50 end-0 translate-middle-y">click</button>
+                <button class="position-absolute top-50 end-0 translate-middle-y">&rightarrow;</button>
 
             </div>
 

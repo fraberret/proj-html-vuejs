@@ -65,13 +65,13 @@ export const featuredProducts = [
         "vote": false,
         "realPrice": 50,
         "discountedPrice": 30,
-        "featured": false,
+        "featured": true,
         "topRated": false,
         "LatestReviews": false,
         "onSale": true,
         "newArrival": false,
         "bestSeller": false,
-        "gender": "men"
+        "gender": "accessories"
     },
     {
         "name": 'Hipster Black top',
@@ -95,7 +95,7 @@ export const featuredProducts = [
         "vote": 5,
         "realPrice": 50,
         "discountedPrice": 30,
-        "featured": false,
+        "featured": true,
         "topRated": false,
         "LatestReviews": false,
         "onSale": false,
@@ -110,12 +110,13 @@ export const featuredProducts = [
         "vote": 5,
         "realPrice": 45,
         "discountedPrice": false,
-        "featured": false,
+        "featured": true,
         "topRated": true,
         "LatestReviews": true,
         "onSale": false,
         "newArrival": false,
-        "bestSeller": false
+        "bestSeller": false,
+        "gender": "accessories"
     },
     {
         "name": 'Spring Printed Dress',
@@ -191,6 +192,21 @@ export const featuredProducts = [
         "newArrival": false,
         "bestSeller": false,
         "gender": "men"
+    },
+    {
+        "name": 'Casual Leather Belts',
+        "image": '/images/casual_leather_belts-400x520.jpg',
+        "tags": 'Modern',
+        "vote": 5,
+        "realPrice": 96,
+        "discountedPrice": false,
+        "featured": true,
+        "topRated": false,
+        "LatestReviews": false,
+        "onSale": false,
+        "newArrival": false,
+        "bestSeller": false,
+        "gender": "accessories"
     },
 
 

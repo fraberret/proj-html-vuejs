@@ -6,6 +6,12 @@ import ViewMoreButton from './ViewMoreButton.vue'
 export default {
     name: 'AppMain',
 
+    data() {
+        return {
+            gender: ''
+        }
+    },
+
     components: {
         Carousel,
         Prices,
@@ -17,6 +23,20 @@ export default {
         "collections",
         "blog"
     ],
+    methods: {
+        changeGenderAccessories() {
+            this.gender = "accessories";
+            console.log(this.gender);
+        },
+        changeGenderMen() {
+            this.gender = "men";
+            console.log(this.gender);
+        },
+        changeGenderWomen() {
+            this.gender = "women";
+            console.log(this.gender);
+        },
+    },
     computed: {
         bestSellerProducts() {
 
@@ -71,9 +91,9 @@ export default {
             <!-- Gender selector -->
             <div class="gender_section d-flex justify-content-center my-5 ">
 
-                <div class="border py-2 px-5">Men</div>
-                <div class="border py-2 px-5">Women</div>
-                <div class="border py-2 px-5">Accessories</div>
+                <button @click="changeGenderMen()" class="border py-2 px-5">Men</button>
+                <button @click="changeGenderWomen()" class="border py-2 px-5">Women</button>
+                <button @click="changeGenderAccessories()" class="border py-2 px-5">Accessories</button>
 
             </div>
 
@@ -83,7 +103,7 @@ export default {
 
                     <!-- Product -->
                     <template
-                        v-for="(product, index) in featuredProducts.filter(item => item.featured && item.gender === 'men').slice(0, 4)"
+                        v-for="(product, index) in featuredProducts.filter(item => item.featured && item.gender === this.gender).slice(0, 4)"
                         :key="index">
                         <div class="col">
                             <div class="card h-100 border-0">
