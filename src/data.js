@@ -39,7 +39,8 @@ export const featuredProducts = [
         "LatestReviews": true,
         "onSale": true,
         "newArrival": true,
-        "bestSeller": true
+        "bestSeller": true,
+        "gender": "men"
     },
     {
         "name": 'Blue Leather Jacket',
@@ -52,7 +53,8 @@ export const featuredProducts = [
         "LatestReviews": false,
         "onSale": true,
         "newArrival": false,
-        "bestSeller": false
+        "bestSeller": false,
+        "gender": "men"
     },
     {
         "name": 'Brown Dress Shoes',
@@ -65,7 +67,8 @@ export const featuredProducts = [
         "LatestReviews": false,
         "onSale": true,
         "newArrival": false,
-        "bestSeller": false
+        "bestSeller": false,
+        "gender": "men"
     },
     {
         "name": 'Hipster Black top',
@@ -78,7 +81,8 @@ export const featuredProducts = [
         "LatestReviews": false,
         "onSale": false,
         "newArrival": true,
-        "bestSeller": false
+        "bestSeller": false,
+        "gender": "women"
     },
     {
         "name": 'Modern Love Tee',
@@ -91,7 +95,8 @@ export const featuredProducts = [
         "LatestReviews": false,
         "onSale": false,
         "newArrival": true,
-        "bestSeller": false
+        "bestSeller": false,
+        "gender": "women"
     },
     {
         "name": 'Leather Gloves',
@@ -117,7 +122,8 @@ export const featuredProducts = [
         "LatestReviews": true,
         "onSale": true,
         "newArrival": true,
-        "bestSeller": false
+        "bestSeller": false,
+        "gender": "women"
     },
     {
         "name": 'Black Leather Jacket',
@@ -130,7 +136,8 @@ export const featuredProducts = [
         "LatestReviews": true,
         "onSale": true,
         "newArrival": true,
-        "bestSeller": true
+        "bestSeller": true,
+        "gender": "women"
     },
     {
         "name": 'Black Leather Suit',
@@ -143,7 +150,8 @@ export const featuredProducts = [
         "LatestReviews": false,
         "onSale": false,
         "newArrival": true,
-        "bestSeller": false
+        "bestSeller": false,
+        "gender": "men"
     },
     {
         "name": 'Blue Jacket & Stripe Tee',
@@ -156,7 +164,8 @@ export const featuredProducts = [
         "LatestReviews": false,
         "onSale": false,
         "newArrival": false,
-        "bestSeller": false
+        "bestSeller": false,
+        "gender": "men"
     },
     {
         "name": 'Modern Black Leather Suit',
@@ -169,7 +178,8 @@ export const featuredProducts = [
         "LatestReviews": false,
         "onSale": false,
         "newArrival": false,
-        "bestSeller": false
+        "bestSeller": false,
+        "gender": "men"
     },
 
 

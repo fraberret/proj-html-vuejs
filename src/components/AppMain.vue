@@ -66,7 +66,8 @@ export default {
                 <div class="row">
 
                     <!-- Product -->
-                    <template v-for="(product, index) in featuredProducts.filter(item => item.featured).slice(0, 4)"
+                    <template
+                        v-for="(product, index) in featuredProducts.filter(item => item.featured && item.gender === 'men').slice(0, 4)"
                         :key="index">
                         <div class="col">
                             <div class="card border-0">
@@ -89,12 +90,12 @@ export default {
                                         <!-- real price -->
                                         <span :class="{ 'real_price': product.discountedPrice }" class="pe-2">${{
                                             product.realPrice
-                                            }}</span>
+                                        }}</span>
 
                                         <!--discounted price  -->
                                         <span v-if="product.discountedPrice != false" class="discount_price pe-2">${{
                                             product.discountedPrice
-                                            }}</span>
+                                        }}</span>
                                     </div>
 
                                 </div>
