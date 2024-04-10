@@ -1,7 +1,8 @@
 <script>
-import { collections } from './data.js'
-import { featuredProducts } from './data.js'
-import { navVoices } from './data.js'
+import { collections } from './data.js';
+import { featuredProducts } from './data.js';
+import { navVoices } from './data.js';
+import { blog } from './data.js'
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 import Socials from './components/Socials.vue'
@@ -22,7 +23,8 @@ export default {
         return {
             navVoices,
             featuredProducts,
-            collections
+            collections,
+            blog
         }
     }
 
@@ -33,7 +35,7 @@ export default {
 
     <AppHeader :navVoices />
 
-    <AppMain :featuredProducts :collections />
+    <AppMain :featuredProducts :collections :blog />
 
     <AppFooter :featuredProducts />
 

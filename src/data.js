@@ -203,5 +203,32 @@ export const collections = [
         "image": "/images/autumn_collection_bg.jpg",
         "description": "RICH AND COMFORTABLE"
     },
+];
+
+export const blog = [
+    {
+        "name": "Lorem ipsum dolor sit amet.",
+        "image": "/images/post_img_12-700x441.jpg",
+        "date": " Semptember 9th, 2015",
+        "comments": 0,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia similique nemo deserunt doloremque."
+
+    },
+    {
+        "name": "Lorem ipsum dolor sit amet.",
+        "image": "/images/post_img_10-700x441.jpg",
+        "date": " Semptember 9th, 2015",
+        "comments": 0,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia similique nemo deserunt doloremque."
+
+    },
+    {
+        "name": "Lorem ipsum dolor sit amet.",
+        "image": "/images/post_img_11-700x441.jpg",
+        "date": " Semptember 9th, 2015",
+        "comments": 0,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia similique nemo deserunt doloremque."
+
+    },
 ]
 
