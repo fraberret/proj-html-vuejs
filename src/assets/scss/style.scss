@@ -33,5 +33,10 @@ main {
 
 
 
+}
 
+footer {
+    & .footer_section {
+        color: lightgray;
+    }
 }

@@ -145,7 +145,7 @@ export default {
 
                 <!-- Collection card -->
                 <div v-for="collection in collections" class="col-4 border_dot">
-                    <div class="ratio ratio-1x1">
+                    <div class="collection ratio ratio-1x1">
 
                         <!-- image -->
                         <img :src="collection.image" alt="">
