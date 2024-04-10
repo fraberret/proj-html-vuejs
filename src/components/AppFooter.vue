@@ -58,6 +58,13 @@ export default {
                             :key="index">
                             <div>
                                 <p>{{ product.name }}</p>
+                                <div class="text-primary" v-if="product.vote != false">
+                                    <font-awesome-icon :icon="['fas', 'star']" />
+                                    <font-awesome-icon :icon="['fas', 'star']" />
+                                    <font-awesome-icon :icon="['fas', 'star']" />
+                                    <font-awesome-icon :icon="['fas', 'star']" />
+                                    <font-awesome-icon :icon="['fas', 'star']" />
+                                </div>
                                 <Prices :product />
                             </div>
 

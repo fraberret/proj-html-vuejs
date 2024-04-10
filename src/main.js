@@ -11,8 +11,9 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons/faChevronDown';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons/faShoppingCart';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 
-library.add(faFacebookF, faTwitter, faInstagram, faYoutube, faChevronDown, faShoppingCart, faSearch, faEnvelope)
+library.add(faFacebookF, faTwitter, faInstagram, faYoutube, faChevronDown, faShoppingCart, faSearch, faEnvelope, faStar)
 
 createApp(App)
     .component('font-awesome-icon', FontAwesomeIcon)

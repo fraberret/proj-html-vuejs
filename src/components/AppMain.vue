@@ -247,9 +247,9 @@ export default {
                         </div>
 
                         <div class="body text-start ">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia similique nemo deserunt
-                            doloremque. Corporis natus nostrum repudiandae doloremque laudantium deserunt accusantium
-                            ratione suscipit necessitatibus commodi, quos illo nesciunt non eligendi!
+                            <h5>{{ post.name }}</h5>
+                            <p>{{ post.date }} | {{ post.comments }} comments</p>
+                            <p>{{ post.description }}</p>
                         </div>
                     </div>
 
@@ -272,6 +272,13 @@ export default {
                         :key="index">
                         <div>
                             <p>{{ product.name }}</p>
+                            <div class="text-primary" v-if="product.vote != false">
+                                <font-awesome-icon :icon="['fas', 'star']" />
+                                <font-awesome-icon :icon="['fas', 'star']" />
+                                <font-awesome-icon :icon="['fas', 'star']" />
+                                <font-awesome-icon :icon="['fas', 'star']" />
+                                <font-awesome-icon :icon="['fas', 'star']" />
+                            </div>
                             <Prices :product />
                         </div>
 
@@ -287,6 +294,13 @@ export default {
                         :key="index">
                         <div>
                             <p>{{ product.name }}</p>
+                            <div class="text-primary" v-if="product.vote != false">
+                                <font-awesome-icon :icon="['fas', 'star']" />
+                                <font-awesome-icon :icon="['fas', 'star']" />
+                                <font-awesome-icon :icon="['fas', 'star']" />
+                                <font-awesome-icon :icon="['fas', 'star']" />
+                                <font-awesome-icon :icon="['fas', 'star']" />
+                            </div>
                             <Prices :product />
                         </div>
 
@@ -302,6 +316,13 @@ export default {
                         :key="index">
                         <div>
                             <p>{{ product.name }}</p>
+                            <div class="text-primary" v-if="product.vote != false">
+                                <font-awesome-icon :icon="['fas', 'star']" />
+                                <font-awesome-icon :icon="['fas', 'star']" />
+                                <font-awesome-icon :icon="['fas', 'star']" />
+                                <font-awesome-icon :icon="['fas', 'star']" />
+                                <font-awesome-icon :icon="['fas', 'star']" />
+                            </div>
                             <Prices :product />
                         </div>
 
@@ -317,6 +338,13 @@ export default {
                         :key="index">
                         <div>
                             <p>{{ product.name }}</p>
+                            <div class="text-primary" v-if="product.vote != false">
+                                <font-awesome-icon :icon="['fas', 'star']" />
+                                <font-awesome-icon :icon="['fas', 'star']" />
+                                <font-awesome-icon :icon="['fas', 'star']" />
+                                <font-awesome-icon :icon="['fas', 'star']" />
+                                <font-awesome-icon :icon="['fas', 'star']" />
+                            </div>
                             <Prices :product />
                         </div>
 
