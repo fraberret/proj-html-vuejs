@@ -91,9 +91,12 @@ export default {
             <!-- Gender selector -->
             <div class="gender_section d-flex justify-content-center my-5 ">
 
-                <button @click="changeGenderMen()" class="border py-2 px-5">Men</button>
-                <button @click="changeGenderWomen()" class="border py-2 px-5">Women</button>
-                <button @click="changeGenderAccessories()" class="border py-2 px-5">Accessories</button>
+                <button :class="{ 'bg-white': gender === 'men' }" @click="changeGenderMen()"
+                    class="border py-2 px-5">Men</button>
+                <button :class="{ 'bg-white': gender === 'women' }" @click="changeGenderWomen()"
+                    class="border py-2 px-5">Women</button>
+                <button :class="{ 'bg-white': gender === 'accessories' }" @click="changeGenderAccessories()"
+                    class="border py-2 px-5">Accessories</button>
 
             </div>
 
