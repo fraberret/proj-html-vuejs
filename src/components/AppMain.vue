@@ -317,7 +317,8 @@ export default {
                 <div class="col-3 flex-column">
                     <h5 class="my-3">FEATURED</h5>
                     <div class="col-4 d-flex border-bottom justify-content-between w-100 pt-3"
-                        v-for="product in featuredProducts">
+                        v-for="(product, index) in featuredProducts.filter(item => item.featured).slice(0, 3)"
+                        :key="index">
                         <div>
                             <p>{{ product.name }}</p>
                             <p>${{ product.realPrice }}</p>
@@ -331,7 +332,8 @@ export default {
                 <div class="col-3 flex-column">
                     <h5 class="my-3">ON SALE</h5>
                     <div class="col-4 d-flex border-bottom justify-content-between w-100 pt-3"
-                        v-for="product in featuredProducts">
+                        v-for="(product, index) in featuredProducts.filter(item => item.onSale).slice(0, 3)"
+                        :key="index">
                         <div>
                             <p>{{ product.name }}</p>
                             <p>${{ product.realPrice }}</p>
@@ -345,7 +347,8 @@ export default {
                 <div class="col-3 flex-column">
                     <h5 class="my-3">TOP RATED</h5>
                     <div class="col-4 d-flex border-bottom justify-content-between w-100 pt-3"
-                        v-for="product in featuredProducts">
+                        v-for="(product, index) in featuredProducts.filter(item => item.topRated).slice(0, 3)"
+                        :key="index">
                         <div>
                             <p>{{ product.name }}</p>
                             <p>${{ product.realPrice }}</p>
@@ -359,7 +362,8 @@ export default {
                 <div class="col-3 flex-column">
                     <h5 class="my-3">LATEST REVIEW</h5>
                     <div class="col-4 d-flex border-bottom justify-content-between w-100 pt-3"
-                        v-for="product in featuredProducts">
+                        v-for="(product, index) in featuredProducts.filter(item => item.LatestReviews).slice(0, 3)"
+                        :key="index">
                         <div>
                             <p>{{ product.name }}</p>
                             <p>${{ product.realPrice }}</p>
